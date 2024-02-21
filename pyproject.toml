@@ -1,0 +1,21 @@
+[project]
+name = "jira_lazy"
+version = "0.0.1"
+authors = [
+    { name="Marcus Harrison", email="marcus@harrisonland.co.uk" }
+]
+description = "A lazy Jira library for lazy developers"
+readme = "README.md"
+requires-python = ">=3.10.12"
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"License :: Other/Proprietary License",
+	"Operating System :: OS Independent",
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
