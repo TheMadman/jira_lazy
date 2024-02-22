@@ -56,6 +56,9 @@ class CollectionEndpoint:
             raise PageParseException(f"Unexpected response JSON: {response}")
 
     def __iter__(self):
+        if not self.values:
+            return
+
         for value in self.values:
             yield value
 
